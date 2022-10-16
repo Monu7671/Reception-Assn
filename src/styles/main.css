@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --bg: #f7f7ff;
+  --primary-color: hsl(237, 63%, 64%);
+  --secondary-color: hsl(236, 72%, 79%);
+
+  --extra-light-gray-blue: hsl(234, 14%, 74%);
+  --light-gray-blue: hsl(234, 14%, 74%);
+  --gray-blue: hsl(233, 13%, 49%);
+  --dark-gray-blue: hsl(232, 13%, 33%);
+
+  font-size: 16px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background: var(--bg);
+  position: relative;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.top.bg-img {
+  top: 0;
+  right: 0;
+}
+
+.bottom.bg-img {
+  bottom: 0;
+  left: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.heading {
+  margin-bottom: 30px;
+  color: var(--gray-blue);
+}
+
+.time-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+  margin-bottom: 70px;
+
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--light-gray-blue);
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 20.625rem;
+  display: flex;
+  align-items: center;
+
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(152, 156, 220, 0.2) 0px 8px 24px;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  font-weight: 700;
+}
+
+.card:nth-child(2) {
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
+
+.card:nth-child(2) .card-wrapper {
+  margin: 1.5rem 0;
+}
+
+.type {
+  margin-bottom: 20px;
+  color: var(--gray-blue);
+}
+
+.card:nth-child(2) .type {
+  color: white;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  column-gap: 0.7rem;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: hsl(232, 13%, 33%);
+}
+
+.card:nth-child(2) .pricing {
+  color: white;
+}
+
+.pricing .usd {
+  font-size: 2.5rem;
+}
+
+.features-wrapper {
+  width: 100%;
+  margin-bottom: 1.9rem;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  font-size: 0.88rem;
+  color: var(--gray-blue);
+}
+
+.card:nth-child(2) .feature {
+  color: white;
+}
+
+.feature:first-of-type {
+  border-top: 1px solid var(--extra-light-gray-blue);
+  border-bottom: 1px solid var(--extra-light-gray-blue);
+}
+
+.feature:last-of-type {
+  border-top: 1px solid var(--extra-light-gray-blue);
+  border-bottom: 1px solid var(--extra-light-gray-blue);
+}
+
+.card:nth-child(2) .feature {
+  border-color: hsla(0, 0%, 100%, 0.3);
+}
+
+button {
+  all: unset;
+  width: 100%;
+  border-radius: 5px;
+  background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+button a {
+  all: unset;
+  cursor: pointer;
+  width: 100%;
+  display: inline-block;
+  padding: 12px 0;
+}
+
+button:hover {
+  outline: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background: transparent;
+}
+
+.card:nth-child(2) button {
+  background: white;
+  color: var(--primary-color);
+}
+
+.card:nth-child(2) button:hover {
+  outline: 2px solid white;
+  color: white;
+  background: transparent;
+}

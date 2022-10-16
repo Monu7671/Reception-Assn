@@ -1,0 +1,128 @@
+/* Mobile responsive media query */
+@media (max-width: 720px) {
+  :root {
+    font-size: 16px;
+  }
+
+  .top.bg-img {
+    top: -50px;
+    right: -175px;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  .cards-wrapper {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .card:nth-child(2) .card-wrapper {
+    margin: 0;
+  }
+}
+
+/* Changing root size for responsive design for multiple screens */
+@media (min-width: 720px) and (max-width: 770px) {
+  :root {
+    font-size: 11px;
+  }
+
+  .top.bg-img {
+    top: -80px;
+    right: -120px;
+  }
+
+  .bottom.bg-img {
+    left: -100px;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 840px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .top.bg-img {
+    top: -60px;
+    right: -100px;
+  }
+
+  .bottom.bg-img {
+    left: -80px;
+  }
+}
+
+/* Setting font size manually because they becomes too small to read */
+@media (min-width: 720px) and (max-width: 840px) {
+  .type {
+    font-size: 13px;
+  }
+
+  .feature {
+    font-size: 11px;
+  }
+
+  button {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 840px) and (max-width: 900px) {
+  :root {
+    font-size: 13px;
+  }
+
+  .top.bg-img {
+    top: -40px;
+    right: -80px;
+  }
+
+  .bottom.bg-img {
+    left: -60px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 970px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .top.bg-img {
+    top: -30px;
+    right: -40px;
+  }
+
+  .bottom.bg-img {
+    left: -30px;
+  }
+}
+
+@media (min-width: 970px) and (max-width: 1040px) {
+  :root {
+    font-size: 15px;
+  }
+
+  .top.bg-img {
+    top: -20px;
+    right: -20px;
+  }
+
+  .bottom.bg-img {
+    left: -10px;
+  }
+}
+
+/* Removing card border radius on larger screens */
+@media (min-width: 720px) {
+  .card:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .card:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
